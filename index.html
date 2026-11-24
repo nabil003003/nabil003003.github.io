@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101016">
+  <meta name="description" content="Portfolio de Nabil Boudarine, développeur full-stack et élève-ingénieur à l’EMSI Marrakech. Découvrez quatre projets web, mobile et IA.">
+  <title>Nabil Boudarine — Développeur full-stack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="accueil">
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#accueil" class="brand" aria-label="Nabil Boudarine, accueil"><span>NB<span class="brand-dot">.</span></span><span class="brand-name">Nabil Boudarine</span></a>
+      <nav aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero" aria-labelledby="intro">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status" aria-hidden="true"></span> RECHERCHE DE STAGE PFE · JANVIER 2027</p>
+          <h1 id="intro">Nabil<br><em>Boudarine.</em></h1>
+          <p class="role">Développeur full-stack</p>
+          <p class="intro">Élève-ingénieur en 5ᵉ année à l’EMSI Marrakech. Je développe des applications web et mobiles, de l’interface utilisateur à l’API.</p>
+          <div class="actions">
+            <a class="button primary" href="#projets">Voir mes projets</a>
+            <a class="button secondary" href="assets/Nabil_Boudarine_cv.pdf" download>Télécharger mon CV <span class="format">PDF</span></a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <div class="orbit orbit-outer" aria-hidden="true"></div>
+          <div class="orbit orbit-inner" aria-hidden="true"></div>
+          <span class="orbit-mark" aria-hidden="true">✦</span>
+          <div class="portrait"><img src="assets/nabil.jpg" alt="Portrait de Nabil Boudarine" width="241" height="301"></div>
+          <figcaption><span aria-hidden="true"></span>MARRAKECH, MAROC</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section projects" id="projets" aria-labelledby="titre-projets">
+      <div class="section-heading">
+        <div><p class="eyebrow">PORTFOLIO</p><h2 id="titre-projets">Projets <em>sélectionnés.</em></h2></div>
+        <a class="text-link" href="https://github.com/nabil003003">Mon profil GitHub</a>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="art art-audit"><img loading="lazy" src="assets/audit.webp" alt="Page d’accueil de la plateforme d’audit documentaire"></div>
+          <div class="project-content">
+            <p class="project-type">AUDIT DOCUMENTAIRE</p>
+            <h3>AuditFlow</h3>
+            <p>Plateforme d’audit de conformité qui compare les documents à un corpus de droit marocain grâce à un système RAG exécuté en local.</p>
+            <p>Contribution aux API REST, à la sécurité et à l’intégration du module de recherche documentaire.</p>
+            <ul class="tags" aria-label="Technologies"><li>Spring Boot</li><li>Next.js</li><li>ChromaDB</li><li>Ollama</li></ul>
+            <a class="text-link" href="https://github.com/nabil003003/audit-system" aria-label="Voir le dépôt GitHub d’AuditFlow">Voir le dépôt</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="art art-story"><img loading="lazy" src="assets/story.webp" alt="Exemple de scène utilisée dans StoryForge Studio"><span class="story-caption">Exemple de scène</span></div>
+          <div class="project-content">
+            <p class="project-type">CRÉATION AUDIOVISUELLE</p>
+            <h3>StoryForge Studio</h3>
+            <p>Application Windows qui transforme des histoires écrites en narrations multivoix et en vidéos verticales sous-titrées.</p>
+            <p>Production locale en arabe, français et anglais, avec synthèse vocale, ambiances sonores et assemblage vidéo.</p>
+            <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>FastAPI</li><li>Tauri</li><li>FFmpeg</li></ul>
+            <a class="text-link" href="https://github.com/nabil003003/Stories-application-" aria-label="Voir le dépôt GitHub de StoryForge Studio">Voir le dépôt</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="art art-hotel"><img loading="lazy" src="assets/hotel.webp" alt="Écran de connexion du PMS AMH Hospitality"></div>
+          <div class="project-content">
+            <p class="project-type">GESTION HÔTELIÈRE</p>
+            <h3>Hotel PMS</h3>
+            <p>Système de gestion multi-établissements conçu pour une chaîne de riads à Marrakech. Il couvre les réservations, la réception et le suivi des séjours.</p>
+            <p>Chez Canada Soft, j’ai travaillé sur la facturation, les folios, la clôture de nuit et l’archivage MinIO.</p>
+            <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li><li>Keycloak</li><li>Docker</li></ul>
+            <a class="text-link" href="https://github.com/nabil003003/hotel-pms" aria-label="Voir le dépôt GitHub de Hotel PMS">Voir le dépôt</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="art art-drive"><img loading="lazy" src="assets/drive-map.webp" alt="Carte de suivi du trajet"><img loading="lazy" src="assets/drive-home.webp" alt="Écran d’accueil de l’application EMSIDrive"></div>
+          <div class="project-content">
+            <p class="project-type">COVOITURAGE ÉTUDIANT</p>
+            <h3>EMSIDrive</h3>
+            <p>Projet d’équipe pour aider les étudiants de l’EMSI Marrakech à trouver et proposer des trajets entre la ville et les campus.</p>
+            <p>L’application réunit les réservations, le suivi GPS, la messagerie et l’import d’emplois du temps par OCR.</p>
+            <ul class="tags" aria-label="Technologies"><li>Flutter</li><li>Angular</li><li>Spring Boot</li><li>PostgreSQL</li></ul>
+            <a class="text-link" href="https://github.com/medhamza47/EMSIDrive" aria-label="Voir le dépôt GitHub d’EMSIDrive">Voir le dépôt</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="parcours" aria-labelledby="titre-parcours">
+      <div class="section-heading"><div><p class="eyebrow">EXPÉRIENCE &amp; FORMATION</p><h2 id="titre-parcours">Mon <em>parcours.</em></h2></div></div>
+      <div class="career">
+        <ol class="timeline">
+          <li><p class="date">JUILLET – SEPTEMBRE 2026</p><h3>Canada Soft</h3><p class="position">Stage PFA · Développement logiciel et microservices</p><p>Participation à l’architecture d’un PMS de 11 microservices. Développement de la facturation et de la clôture de nuit, intégration de Kong et Keycloak.</p></li>
+          <li><p class="date">JUILLET – AOÛT 2025</p><h3>Compagnie Minière de Guemassa</h3><p class="position">Stage PFA · Application de gestion</p><p>Contribution à une application de logistique et de pesée avec Spring Boot et PostgreSQL. Développement d’API REST et d’exports Excel.</p></li>
+          <li><p class="date">DEPUIS 2022</p><h3>EMSI Marrakech</h3><p class="position">Cycle ingénieur en informatique</p><p>5ᵉ année, spécialité Développement Digital et Systèmes d’Information.</p></li>
+        </ol>
+        <aside class="skills" aria-labelledby="comp-title">
+          <h3 id="comp-title">Compétences</h3>
+          <dl><dt>Front-end &amp; mobile</dt><dd>React, Next.js, TypeScript, Flutter</dd><dt>Back-end &amp; données</dt><dd>Java, Spring Boot, Python, FastAPI, PostgreSQL, MySQL</dd><dt>Architecture &amp; outils</dt><dd>API REST, microservices, Docker, Keycloak, Kong, Git</dd><dt>IA appliquée</dt><dd>RAG, ChromaDB, Ollama</dd></dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap section contact" id="contact" aria-labelledby="titre-contact">
+      <div class="contact-panel">
+        <div><p class="eyebrow">CONTACT</p><h2 id="titre-contact">Discutons <em>ensemble.</em></h2><p>Je recherche un stage PFE de 4 à 6 mois à partir de janvier 2027.</p></div>
+        <div class="contact-actions"><a class="button primary" href="mailto:nabilboudarine@gmail.com">M’écrire</a><a class="email" href="mailto:nabilboudarine@gmail.com">nabilboudarine@gmail.com</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© 2026 Nabil Boudarine</span><a href="#accueil">Retour en haut</a></footer>
+</body>
+</html>
